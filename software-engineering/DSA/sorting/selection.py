@@ -1,4 +1,4 @@
-from DSA.utils import time_decorator, benchmark_sort
+from DSA.utils.benchmark import time_decorator, benchmark_sort
 
 @time_decorator
 def selection_sort(arr):
