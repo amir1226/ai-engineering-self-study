@@ -54,3 +54,52 @@ def benchmark_sort(sort_fn):
 
     for name, arr in test_cases.items():
         validate_sort(sort_fn, arr, name)
+        
+
+def benchmark_search(search_fn_1, search_fn_2):
+    random.seed(12)
+
+    print(
+        "-" * 50,
+        "\n",
+        f"Benchmarking search functions "
+        f"'{search_fn_1.__name__}' vs '{search_fn_2.__name__}'",
+        "\n",
+        "-" * 50,
+    )
+
+    test_cases = {
+        "small": sorted(random.sample(range(1_000), 1_000)),
+        "medium": sorted(random.sample(range(100_000), 100_000)),
+        "big": sorted(random.sample(range(10_000_000), 10_000_000)),
+    }
+
+    for case_name, arr in test_cases.items():
+
+        targets = {
+            "first": arr[0],
+            "middle": arr[len(arr) // 2],
+            "last": arr[-1],
+            "missing_low": -1,
+            "missing_high": 999999999,
+        }
+
+        print(f"\n{case_name.upper()}")
+        
+        expected = {
+            target_name: arr.index(target) if target in arr else -1
+            for target_name, target in targets.items()
+        }
+
+        for fn in (search_fn_1, search_fn_2):
+            validations = []
+
+            for target_name, target in targets.items():
+                result = fn(arr, target)
+                validations.append(result == expected[target_name])
+            status = "OK" if all(validations) else "FAILED"
+
+            print(
+                f"{fn.__name__:>30} | "
+                f"{status}"
+            )
