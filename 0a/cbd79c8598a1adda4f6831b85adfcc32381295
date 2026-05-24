@@ -1,0 +1,19 @@
+software-engineering/DSA/graph&trees/2.DFS/DFS_algorithm.py
+  s_f131134eef04bf::t_8f67a3b36cc48d 1-2,10,12,15-26,45-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "0acbd79c8598a1adda4f6831b85adfcc32381295",
+  "prompts": {},
+  "sessions": {
+    "s_f131134eef04bf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "af738b16-1e59-4502-88f0-3f7e127a2cea",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "amir1226 <amir1226@gmail.com>"
+    }
+  }
+}
