@@ -1,0 +1,20 @@
+ai-engineering/langraph/ai_agents/3.react_agent.py
+  s_85c4bbeb07c3d8::t_1a3cae9323dc9a 53
+  s_85c4bbeb07c3d8::t_23efc107e65cb9 75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b51b713a8ffba1546a50cc1b52a072880a473d1c",
+  "prompts": {},
+  "sessions": {
+    "s_85c4bbeb07c3d8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "03ea1a26-1063-4c73-af00-d1c881d16138",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "amir1226 <amir1226@gmail.com>"
+    }
+  }
+}
