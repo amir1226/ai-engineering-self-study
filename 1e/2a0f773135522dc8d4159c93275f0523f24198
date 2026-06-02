@@ -1,0 +1,9 @@
+ai-engineering/langraph/ai_agents/.gitignore
+  ai_agent 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "1e2a0f773135522dc8d4159c93275f0523f24198",
+  "prompts": {}
+}
