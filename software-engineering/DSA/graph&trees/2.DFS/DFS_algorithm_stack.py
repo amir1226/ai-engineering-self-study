@@ -3,15 +3,14 @@
 def dfs_algorithm(graph,current_node=0):
     stack = [current_node]
     visited=[False]*len(graph)
+    visited[current_node] = True
     while stack:
         current = stack.pop()
-        if visited[current]:
-            continue
         print(current)
-        visited[current] = True
         for node in reversed(graph[current]):
             if not visited[node]:
                 stack.append(node)
+                visited[node] = True
 
 if __name__ == "__main__":
     # Adjacency list:
