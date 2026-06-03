@@ -1,0 +1,19 @@
+software-engineering/DSA/graph&trees/3.BFS/README.md
+  s_746e97131b10d9::t_ac8056c1fbea66 1-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "0bc3beb5364ee5232bfd193a55c7c24282c7e3b8",
+  "prompts": {},
+  "sessions": {
+    "s_746e97131b10d9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cdc54ab8-7d0f-4204-a70d-b6544122f745",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "amir1226 <amir1226@gmail.com>"
+    }
+  }
+}
