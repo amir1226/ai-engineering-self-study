@@ -1,0 +1,21 @@
+software-engineering/DSA/graph&trees/2.DFS/undirected_path.py
+  s_746e97131b10d9::t_67c640e579df85 1-42
+software-engineering/DSA/graph&trees/3.BFS/undirected_path.py
+  s_746e97131b10d9::t_a05d68fde69f74 1-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "703327c869accec0c060f95810c2fb6432c5caad",
+  "prompts": {},
+  "sessions": {
+    "s_746e97131b10d9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cdc54ab8-7d0f-4204-a70d-b6544122f745",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "amir1226 <amir1226@gmail.com>"
+    }
+  }
+}
