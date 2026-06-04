@@ -1,5 +1,3 @@
-from collections import deque
-
 def has_path(graph, src, dst, visited=None):
     if visited is None:
         visited = set()
