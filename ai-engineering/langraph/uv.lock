@@ -133,6 +133,25 @@ wheels = [
 ]
 
 [[package]]
+name = "anthropic"
+version = "0.104.0"
+source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "docstring-parser" },
+    { name = "httpx" },
+    { name = "jiter" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://pypi.artifacts.furycloud.io/packages/anthropic/0.104.0/anthropic-0.104.0.tar.gz", hash = "sha256:1ae8ef4709e90cc2068c8e8a63c1ecb63cc5360d325a4bef8b296aad76148be3" }
+wheels = [
+    { url = "https://pypi.artifacts.furycloud.io/packages/anthropic/0.104.0/anthropic-0.104.0-py3-none-any.whl", hash = "sha256:18f73ba3429aab237cdd146a486d20b4da3c008fb4a3ba83f237b27793e884c7" },
+]
+
+[[package]]
 name = "anyio"
 version = "4.13.0"
 source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
@@ -516,12 +535,33 @@ wheels = [
 ]
 
 [[package]]
+name = "docstring-parser"
+version = "0.18.0"
+source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
+sdist = { url = "https://pypi.artifacts.furycloud.io/packages/docstring-parser/0.18.0/docstring_parser-0.18.0.tar.gz", hash = "sha256:292510982205c12b1248696f44959db3cdd1740237a968ea1e2e7a900eeb2015" }
+wheels = [
+    { url = "https://pypi.artifacts.furycloud.io/packages/docstring-parser/0.18.0/docstring_parser-0.18.0-py3-none-any.whl", hash = "sha256:b3fcbed555c47d8479be0796ef7e19c2670d428d72e96da63f3a40122860374b" },
+]
+
+[[package]]
 name = "durationpy"
 version = "0.10"
 source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
 sdist = { url = "https://pypi.artifacts.furycloud.io/packages/durationpy/0.10/durationpy-0.10.tar.gz", hash = "sha256:1fa6893409a6e739c9c72334fc65cca1f355dbdd93405d30f726deb5bde42fba" }
 wheels = [
     { url = "https://pypi.artifacts.furycloud.io/packages/durationpy/0.10/durationpy-0.10-py3-none-any.whl", hash = "sha256:3b41e1b601234296b4fb368338fdcd3e13e0b4fb5b67345948f4f2bf9868b286" },
+]
+
+[[package]]
+name = "dydantic"
+version = "0.0.8"
+source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
+dependencies = [
+    { name = "pydantic" },
+]
+sdist = { url = "https://pypi.artifacts.furycloud.io/packages/dydantic/0.0.8/dydantic-0.0.8.tar.gz", hash = "sha256:14a31d4cdfce314ce3e69e8f8c7c46cbc26ce3ce4485de0832260386c612942f" }
+wheels = [
+    { url = "https://pypi.artifacts.furycloud.io/packages/dydantic/0.0.8/dydantic-0.0.8-py3-none-any.whl", hash = "sha256:cd0a991f523bd8632699872f1c0c4278415dd04783e36adec5428defa0afb721" },
 ]
 
 [[package]]
@@ -1159,6 +1199,20 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-anthropic"
+version = "1.4.3"
+source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
+dependencies = [
+    { name = "anthropic" },
+    { name = "langchain-core" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://pypi.artifacts.furycloud.io/packages/langchain-anthropic/1.4.3/langchain_anthropic-1.4.3.tar.gz", hash = "sha256:f8a2442463c0629b1b3110eaeaa56fdbdc87df2a802f8c7f5ecf611eb4874ec8" }
+wheels = [
+    { url = "https://pypi.artifacts.furycloud.io/packages/langchain-anthropic/1.4.3/langchain_anthropic-1.4.3-py3-none-any.whl", hash = "sha256:65466e0f2f95909a009708f2958e917dfdbfab79c612b4484a30866a85e1f291" },
+]
+
+[[package]]
 name = "langchain-chroma"
 version = "1.1.0"
 source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
@@ -1328,6 +1382,25 @@ wheels = [
 ]
 
 [[package]]
+name = "langmem"
+version = "0.0.30"
+source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
+dependencies = [
+    { name = "langchain" },
+    { name = "langchain-anthropic" },
+    { name = "langchain-core" },
+    { name = "langchain-openai" },
+    { name = "langgraph" },
+    { name = "langgraph-checkpoint" },
+    { name = "langsmith" },
+    { name = "trustcall" },
+]
+sdist = { url = "https://pypi.artifacts.furycloud.io/packages/langmem/0.0.30/langmem-0.0.30.tar.gz", hash = "sha256:4e27920979f8253a96d279f4f97b1aebbfb49e95a46d5269433488ed044756e1" }
+wheels = [
+    { url = "https://pypi.artifacts.furycloud.io/packages/langmem/0.0.30/langmem-0.0.30-py3-none-any.whl", hash = "sha256:142f040014493eebd67e1055c0642f9ab38868b5b1fde5c8f2d39add57f4ba5b" },
+]
+
+[[package]]
 name = "langraph"
 version = "0.1.0"
 source = { virtual = "." }
@@ -1339,6 +1412,7 @@ dependencies = [
     { name = "langchain-openai" },
     { name = "langchain-text-splitters" },
     { name = "langgraph" },
+    { name = "langmem" },
     { name = "pypdf" },
     { name = "python-dotenv" },
 ]
@@ -1352,6 +1426,7 @@ requires-dist = [
     { name = "langchain-openai", specifier = ">=1.2.1" },
     { name = "langchain-text-splitters", specifier = ">=1.1.2" },
     { name = "langgraph", specifier = ">=1.2.0" },
+    { name = "langmem", specifier = ">=0.0.30" },
     { name = "pypdf", specifier = ">=6.11.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
@@ -2949,6 +3024,20 @@ source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
 sdist = { url = "https://pypi.artifacts.furycloud.io/packages/traitlets/5.15.0/traitlets-5.15.0.tar.gz", hash = "sha256:4fead733f81cf1c4c938e06f8ca4633896833c9d89eff878159457f4d4392971" }
 wheels = [
     { url = "https://pypi.artifacts.furycloud.io/packages/traitlets/5.15.0/traitlets-5.15.0-py3-none-any.whl", hash = "sha256:fb36a18867a6803deab09f3c5e0fa81bb7b26a5c9e82501c9933f759166eff40" },
+]
+
+[[package]]
+name = "trustcall"
+version = "0.0.39"
+source = { registry = "https://pypi.artifacts.furycloud.io/simple" }
+dependencies = [
+    { name = "dydantic" },
+    { name = "jsonpatch" },
+    { name = "langgraph" },
+]
+sdist = { url = "https://pypi.artifacts.furycloud.io/packages/trustcall/0.0.39/trustcall-0.0.39.tar.gz", hash = "sha256:ec315818224501b9537ce6b7618dbc21be41210c6e8f2e239169a5a00912cd6e" }
+wheels = [
+    { url = "https://pypi.artifacts.furycloud.io/packages/trustcall/0.0.39/trustcall-0.0.39-py3-none-any.whl", hash = "sha256:d7da42e0bba816c0539b2936dfed90ffb3ea8d789e548e73865d416f8ac4ee64" },
 ]
 
 [[package]]
