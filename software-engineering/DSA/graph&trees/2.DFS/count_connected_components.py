@@ -16,15 +16,11 @@ def count_connected_components(graph):
     return count
             
 def traverse(graph, node, visited: set):
-    from collections import deque
-    queue = deque([node])
+    if node in visited:
+        return
     visited.add(node)
-    while queue:
-        current = queue.popleft()
-        for neighbour in graph[current]:
-            if neighbour not in visited:
-                visited.add(neighbour)
-                queue.append(neighbour)
+    for neighbour in graph[node]:
+        traverse(graph, neighbour, visited)
         
 
 if __name__ == "__main__":
