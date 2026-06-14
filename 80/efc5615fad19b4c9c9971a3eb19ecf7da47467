@@ -1,0 +1,19 @@
+software-engineering/DSA/graph&trees/2.DFS/count_connected_components.py
+  s_aa09a67803bba0::t_2a7db1e28210bb 19-20,22-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "80efc5615fad19b4c9c9971a3eb19ecf7da47467",
+  "prompts": {},
+  "sessions": {
+    "s_aa09a67803bba0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1379886b-7ff5-42cb-8971-931da44103ef",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "amir1226 <amir1226@gmail.com>"
+    }
+  }
+}
